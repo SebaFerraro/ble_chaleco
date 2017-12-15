@@ -44,6 +44,7 @@ extern esp_ble_ibeacon_vendor_t vendor_config;
 
 ///Declare static functions
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
+static uint8_t esp_euui[16]=ESP_UUID;
 
 #if (IBEACON_MODE == IBEACON_RECEIVER)
 static esp_ble_scan_params_t ble_scan_params = {
@@ -98,42 +99,50 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
     case ESP_GAP_BLE_SCAN_RESULT_EVT: {
         esp_ble_gap_cb_param_t *scan_result = (esp_ble_gap_cb_param_t *)param;
         switch (scan_result->scan_rst.search_evt) {
-        case ESP_GAP_SEARCH_INQ_RES_EVT:
+        case ESP_GAP_SEARCH_INQ_RES_EVT:{
             /* Search for BLE iBeacon Packet */
             if (esp_ble_is_ibeacon_packet(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len)){
                 esp_ble_ibeacon_t *ibeacon_data = (esp_ble_ibeacon_t*)(scan_result->scan_rst.ble_adv);
                 ESP_LOGI(DEMO_TAG, "----------Packet Found----------");
         	gpio_set_level(PIN_BLUE, 1);
-		uint8_t baddr[6]=(uint8_t)scan_result->scan_rst.bda;		
-		uint8_t bkey[16]=(uint8_t)ibeacon_data->ibeacon_vendor.key;
-		uint16_t bserv=(uint16_t) ibeacon_data->ibeacon_head.service_id;		
-		uint8_t bssi=(uint8_t)scan_result->scan_rst.rssia;
+		uint8_t baddr[6]={0};
+		uint8_t bkey[16]={0};
+		uint16_t bserv=0;
+		int8_t bssi=0;
+		bserv=ibeacon_data->ibeacon_head.service_id;		
+		bssi=scan_result->scan_rst.rssi;
+                ESP_LOGI(DEMO_TAG, "RSSI of packet:%d dbm", scan_result->scan_rst.rssi);
+                ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
+                ESP_LOGI(DEMO_TAG, "Packet rssi %d serv_id %d\n",bssi,bserv);
 		if (bserv==0x1703){
                   ESP_LOGI(DEMO_TAG, "Packet Baliza.");
 		  int igual=1;
-		  for(int i=0;i<16;i++){
-		   if(bkey[i]!=ESP_UUID[i]){
-                         ESP_LOGI(DEMO_TAG, "Packet key erronea.");
-			 igual=0;
-			 break;
-		   }
+		  for (int p=0;p<16;p++){
+		    if(p<6)
+		      baddr[p]=scan_result->scan_rst.bda[p];		
+		    bkey[p]=ibeacon_data->ibeacon_vendor.key[p];
+		    if(bkey[p] != esp_euui[p]){
+                      ESP_LOGI(DEMO_TAG, "Packet key erronea.");
+		      igual=0;
+		    }
 		  }
-		 if(igual==1 & bssi<67){
-                    ESP_LOGI(DEMO_TAG, "RSSI of packet:%d dbm", scan_result->scan_rst.rssi);
-                    ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
-	            gpio_set_level(PIN_BLUE, 1);
-		    vTaskDelay(2000 / portTICK_PERIOD_MS);
-	            gpio_set_level(PIN_BLUE, 0);
+                  ESP_LOGI(DEMO_TAG, "Packet rssi %d igual %d\n",bssi,igual);
+		  if((igual==1) & (bssi>-67)){
+                     ESP_LOGI(DEMO_TAG, "Alarma Disparada.");
+	             gpio_set_level(PIN_RED, 1);
+		     vTaskDelay(2000 / portTICK_PERIOD_MS);
+	             gpio_set_level(PIN_RED, 0);
+		  }
 		}
-
         	gpio_set_level(PIN_BLUE, 0);
-            }
+             }
             break;
+	  }
         default:
             break;
         }
         break;
-    }
+      }
 
     case ESP_GAP_BLE_SCAN_STOP_COMPLETE_EVT:
         if (param->scan_stop_cmpl.status != ESP_BT_STATUS_SUCCESS){
