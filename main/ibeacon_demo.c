@@ -51,8 +51,8 @@ static esp_ble_scan_params_t ble_scan_params = {
     .scan_type              = BLE_SCAN_TYPE_ACTIVE,
     .own_addr_type          = BLE_ADDR_TYPE_PUBLIC,
     .scan_filter_policy     = BLE_SCAN_FILTER_ALLOW_ALL,
-    .scan_interval          = 0x50,
-    .scan_window            = 0x30
+    .scan_interval          = 0xa0,
+    .scan_window            = 0x90
 };
 
 #elif (IBEACON_MODE == IBEACON_SENDER)
@@ -103,7 +103,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
             /* Search for BLE iBeacon Packet */
             if (esp_ble_is_ibeacon_packet(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len)){
                 esp_ble_ibeacon_t *ibeacon_data = (esp_ble_ibeacon_t*)(scan_result->scan_rst.ble_adv);
-                ESP_LOGI(DEMO_TAG, "----------Packet Found----------");
+                //ESP_LOGI(DEMO_TAG, "----------Packet Found----------");
         	gpio_set_level(PIN_BLUE, 1);
 		uint8_t baddr[6]={0};
 		uint8_t bkey[16]={0};
@@ -111,11 +111,11 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 		int8_t bssi=0;
 		bserv=ibeacon_data->ibeacon_head.service_id;		
 		bssi=scan_result->scan_rst.rssi;
-                ESP_LOGI(DEMO_TAG, "RSSI of packet:%d dbm", scan_result->scan_rst.rssi);
-                ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
+               // ESP_LOGI(DEMO_TAG, "RSSI of packet:%d dbm", scan_result->scan_rst.rssi);
+                //ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
                 ESP_LOGI(DEMO_TAG, "Packet rssi %d serv_id %d\n",bssi,bserv);
 		if (bserv==0x1703){
-                  ESP_LOGI(DEMO_TAG, "Packet Baliza.");
+                  //ESP_LOGI(DEMO_TAG, "Packet Baliza.");
 		  int igual=1;
 		  for (int p=0;p<16;p++){
 		    if(p<6)
@@ -126,9 +126,10 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 		      igual=0;
 		    }
 		  }
-                  ESP_LOGI(DEMO_TAG, "Packet rssi %d igual %d\n",bssi,igual);
-		  if((igual==1) & (bssi>-67)){
+        	  gpio_set_level(PIN_BLUE, 0);
+		  if((igual==1) & (bssi>-80)){
                      ESP_LOGI(DEMO_TAG, "Alarma Disparada.");
+                     ESP_LOGI(DEMO_TAG, "Packet rssi %d igual %d\n",bssi,igual);
 	             gpio_set_level(PIN_RED, 1);
 		     vTaskDelay(2000 / portTICK_PERIOD_MS);
 	             gpio_set_level(PIN_RED, 0);
