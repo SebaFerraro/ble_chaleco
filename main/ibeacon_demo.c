@@ -35,6 +35,15 @@
 #include "esp_log.h"
 #include "driver/gpio.h"
 
+#include "freertos/event_groups.h"
+#include "esp_system.h"
+#include "esp_wifi.h"
+#include "esp_event_loop.h"
+#include "esp_log.h"
+
+#define WIFI_SSID "Wifi_Interno"
+#define WIFI_PASS "1nst1tuc10n4l"
+
 #define PIN_BLUE GPIO_NUM_23
 #define PIN_RED GPIO_NUM_22
 #define GPIO_OUTPUT_PINS  ((1ULL<<PIN_RED) | (1ULL<<PIN_BLUE))
@@ -46,7 +55,15 @@ extern esp_ble_ibeacon_vendor_t vendor_config;
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param);
 static uint8_t esp_euui[16]=ESP_UUID;
 
-#if (IBEACON_MODE == IBEACON_RECEIVER)
+// Event group
+static EventGroupHandle_t wifi_event_group;
+static EventGroupHandle_t pkt_event_group;
+static EventGroupHandle_t alarm_event_group;
+const int CONNECTED_BIT = BIT0;
+const int PKT_BIT = BIT1;
+const int ALARM_BIT = BIT2;
+
+
 static esp_ble_scan_params_t ble_scan_params = {
     .scan_type              = BLE_SCAN_TYPE_ACTIVE,
     .own_addr_type          = BLE_ADDR_TYPE_PUBLIC,
@@ -55,33 +72,17 @@ static esp_ble_scan_params_t ble_scan_params = {
     .scan_window            = 0x90
 };
 
-#elif (IBEACON_MODE == IBEACON_SENDER)
-static esp_ble_adv_params_t ble_adv_params = {
-    .adv_int_min        = 0x20,
-    .adv_int_max        = 0x40,
-    .adv_type           = ADV_TYPE_NONCONN_IND,
-    .own_addr_type      = BLE_ADDR_TYPE_PUBLIC,
-    .channel_map        = ADV_CHNL_ALL,
-    .adv_filter_policy = ADV_FILTER_ALLOW_SCAN_ANY_CON_ANY,
-};
-#endif
-
 
 static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)
 {
     switch (event) {
     case ESP_GAP_BLE_ADV_DATA_RAW_SET_COMPLETE_EVT:{
-#if (IBEACON_MODE == IBEACON_SENDER)
-        esp_ble_gap_start_advertising(&ble_adv_params);
-#endif
         break;
     }
     case ESP_GAP_BLE_SCAN_PARAM_SET_COMPLETE_EVT: {
-#if (IBEACON_MODE == IBEACON_RECEIVER)
         //the unit of the duration is second, 0 means scan permanently
         uint32_t duration = 0;
         esp_ble_gap_start_scanning(duration);
-#endif
         break;
     }
     case ESP_GAP_BLE_SCAN_START_COMPLETE_EVT:
@@ -104,7 +105,6 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
             if (esp_ble_is_ibeacon_packet(scan_result->scan_rst.ble_adv, scan_result->scan_rst.adv_data_len)){
                 esp_ble_ibeacon_t *ibeacon_data = (esp_ble_ibeacon_t*)(scan_result->scan_rst.ble_adv);
                 //ESP_LOGI(DEMO_TAG, "----------Packet Found----------");
-        	gpio_set_level(PIN_BLUE, 1);
 		uint8_t baddr[6]={0};
 		uint8_t bkey[16]={0};
 		uint16_t bserv=0;
@@ -115,6 +115,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
                 //ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
                 ESP_LOGI(DEMO_TAG, "Packet rssi %d serv_id %d\n",bssi,bserv);
 		if (bserv==0x1703){
+		  xEventGroupSetBits(pkt_event_group, PKT_BIT);
                   //ESP_LOGI(DEMO_TAG, "Packet Baliza.");
 		  int igual=1;
 		  for (int p=0;p<16;p++){
@@ -130,12 +131,9 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 		  if((igual==1) & (bssi>-80)){
                      ESP_LOGI(DEMO_TAG, "Alarma Disparada.");
                      ESP_LOGI(DEMO_TAG, "Packet rssi %d igual %d\n",bssi,igual);
-	             gpio_set_level(PIN_RED, 1);
-		     vTaskDelay(2000 / portTICK_PERIOD_MS);
-	             gpio_set_level(PIN_RED, 0);
+		     xEventGroupSetBits(alarm_event_group, ALARM_BIT);
 		  }
 		}
-        	gpio_set_level(PIN_BLUE, 0);
              }
             break;
 	  }
@@ -190,6 +188,76 @@ void ble_ibeacon_init(void)
     ble_ibeacon_appRegister();
 }
 
+
+// Wifi event handler
+static esp_err_t event_handler(void *ctx, system_event_t *event)
+{
+    switch(event->event_id) {
+		
+    case SYSTEM_EVENT_STA_START:
+        esp_wifi_connect();
+        break;
+    
+	case SYSTEM_EVENT_STA_GOT_IP:
+        xEventGroupSetBits(wifi_event_group, CONNECTED_BIT);
+        break;
+    
+	case SYSTEM_EVENT_STA_DISCONNECTED:
+		xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
+        break;
+    
+	default:
+        break;
+    }
+   
+	return ESP_OK;
+}
+
+void main_task(void *pvParameter)
+{
+	// wait for connection
+	printf("Main task: waiting for connection to the wifi network... ");
+	xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+	printf("connected!\n");
+	
+	// print the local IP address
+	tcpip_adapter_ip_info_t ip_info;
+	ESP_ERROR_CHECK(tcpip_adapter_get_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info));
+	printf("IP Address:  %s\n", ip4addr_ntoa(&ip_info.ip));
+	printf("Subnet mask: %s\n", ip4addr_ntoa(&ip_info.netmask));
+	printf("Gateway:     %s\n", ip4addr_ntoa(&ip_info.gw));
+	
+	while(1) {
+		vTaskDelay(1000 / portTICK_RATE_MS);
+	}
+}
+
+void pkt_led(void *pvParameter)
+{
+	while(1) {
+	   // wait for connection
+      	      printf("Pkt Led: Esperando... ");
+	      xEventGroupWaitBits(pkt_event_group, PKT_BIT, true, true, portMAX_DELAY);
+	      printf("Pkt Led: activado\n");
+              gpio_set_level(PIN_BLUE, 1);
+	      vTaskDelay(500 / portTICK_RATE_MS);
+     	      gpio_set_level(PIN_BLUE, 0);
+	}
+}
+
+void alarm_led(void *pvParameter)
+{
+	while(1) {
+	   // wait for connection
+      	      printf("Alarm Led: Esperando... ");
+	      xEventGroupWaitBits(alarm_event_group, ALARM_BIT, true, true, portMAX_DELAY);
+	      printf("ALARM Led: activado\n");
+	      gpio_set_level(PIN_RED, 1);
+	      vTaskDelay(5000 / portTICK_PERIOD_MS);
+	      gpio_set_level(PIN_RED, 0);
+	}
+}
+
 void app_main()
 {
     ESP_ERROR_CHECK(nvs_flash_init());
@@ -208,18 +276,38 @@ void app_main()
     ble_ibeacon_init();
 
     /* set scan parameters */
-#if (IBEACON_MODE == IBEACON_RECEIVER)
     esp_ble_gap_set_scan_params(&ble_scan_params);
+    // create the event group to handle wifi events
+    wifi_event_group = xEventGroupCreate();
+    pkt_event_group = xEventGroupCreate();
+    alarm_event_group = xEventGroupCreate();
 
-#elif (IBEACON_MODE == IBEACON_SENDER)
-    esp_ble_ibeacon_t ibeacon_adv_data;
-    esp_err_t status = esp_ble_config_ibeacon_data (&vendor_config, &ibeacon_adv_data);
-    if (status == ESP_OK){
-        esp_ble_gap_config_adv_data_raw((uint8_t*)&ibeacon_adv_data, sizeof(ibeacon_adv_data));
-    }
-    else {
-        ESP_LOGE(DEMO_TAG, "Config iBeacon data failed, status =0x%x\n", status);
-    }
-#endif
+    // initialize the tcp stack
+    tcpip_adapter_init();
+
+    // initialize the wifi event handler
+    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+	
+    // initialize the wifi stack in STAtion mode with config in RAM
+    wifi_init_config_t wifi_init_config = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&wifi_init_config));
+    ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+
+    // configure the wifi connection and start the interface
+    wifi_config_t wifi_config = {
+       .sta = {
+           .ssid = WIFI_SSID,
+           .password = WIFI_PASS,
+       },
+    };
+    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+    ESP_ERROR_CHECK(esp_wifi_start());
+    printf("Connecting to %s\n", WIFI_SSID);
+	
+    // start the main task
+    xTaskCreate(&main_task, "main_task", 2048, NULL, 5, NULL);
+    xTaskCreate(&pkt_led, "pkt_led", 2048, NULL, 5, NULL);
+    xTaskCreate(&alarm_led, "alarm_led", 2048, NULL, 5, NULL);
 }
 

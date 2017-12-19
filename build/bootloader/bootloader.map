@@ -1,242 +1,242 @@
 Archive member included to satisfy reference by file (symbol)
 
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                               (call_start_cpu0)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_mmap)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_partition_table_basic_verify)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_image_load)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o) (bootloader_sha256_start)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o) (bootloader_fill_random)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_log_timestamp)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_rom_spiflash_unlock)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (rtc_vddsdio_get_config)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (rtc_clk_slow_freq_get)
-/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o) (rtc_clk_cal_ratio)
-/home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o) (__bswapsi2)
-/home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
-                              /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o) (__udivdi3)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (bootloader_mmap)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_partition_table_basic_verify)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_image_load)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o) (bootloader_sha256_start)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o) (bootloader_fill_random)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_log_timestamp)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (esp_rom_spiflash_unlock)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (rtc_vddsdio_get_config)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o) (rtc_clk_slow_freq_get)
+/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o) (rtc_clk_cal_ratio)
+/home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o) (__bswapsi2)
+/home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                              /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o) (__udivdi3)
 
 Allocating common symbols
 Common symbol       size              file
 
 esp_image_spi_freq_t
-                    0x4               /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                    0x4               /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
 
 Discarded input sections
 
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .xt.lit        0x0000000000000000       0xa8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .xt.prop       0x0000000000000000      0xba0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- COMMON         0x0000000000000000        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xt.lit        0x0000000000000000       0xa8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xt.prop       0x0000000000000000      0xba0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ COMMON         0x0000000000000000        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .literal.bootloader_flash_write
-                0x0000000000000000       0x40 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_flash_erase_sector
-                0x0000000000000000        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_write
-                0x0000000000000000       0xb2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000000000000       0xb2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .text.bootloader_flash_erase_sector
-                0x0000000000000000       0x16 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xt.lit        0x0000000000000000       0x40 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xt.prop       0x0000000000000000      0x360 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.lit        0x0000000000000000        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xt.prop       0x0000000000000000       0xe4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x0000000000000000       0x16 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xt.lit        0x0000000000000000       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xt.prop       0x0000000000000000      0x360 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.lit        0x0000000000000000        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xt.prop       0x0000000000000000       0xe4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .literal.esp_image_verify_bootloader
-                0x0000000000000000        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .rodata        0x0000000000000000        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000000000000        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .rodata        0x0000000000000000        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .text.esp_image_verify_bootloader
-                0x0000000000000000       0x32 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.lit        0x0000000000000000       0x48 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xt.prop       0x0000000000000000      0x660 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .xt.prop       0x0000000000000000      0x198 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000000000000       0x32 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.lit        0x0000000000000000       0x48 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xt.prop       0x0000000000000000      0x660 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xt.prop       0x0000000000000000      0x198 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .rodata.str1.4
-                0x0000000000000000        0x9 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .data.TAG      0x0000000000000000        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .xt.prop       0x0000000000000000       0xd8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000000000000        0x9 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .data.TAG      0x0000000000000000        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xt.prop       0x0000000000000000       0xd8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .literal.esp_log_buffer_hex_internal
-                0x0000000000000000       0x50 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000       0x50 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .literal.esp_log_buffer_char_internal
-                0x0000000000000000       0x50 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000       0x50 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .literal.esp_log_buffer_hexdump_internal
-                0x0000000000000000       0x78 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000       0x78 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .rodata.str1.4
-                0x0000000000000000       0xa6 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000       0xa6 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .text.esp_log_buffer_hex_internal
-                0x0000000000000000      0x11a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000      0x11a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .text.esp_log_buffer_char_internal
-                0x0000000000000000      0x107 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000      0x107 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .text.esp_log_buffer_hexdump_internal
-                0x0000000000000000      0x1da /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .xt.lit        0x0000000000000000       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .xt.prop       0x0000000000000000      0x354 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000000      0x1da /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .xt.lit        0x0000000000000000       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .xt.prop       0x0000000000000000      0x354 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .literal.spi_cache_mode_switch
-                0x0000000000000000       0x38 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x38 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_chip_internal
-                0x0000000000000000       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_block_internal
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_sector_internal
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_enable_write
-                0x0000000000000000       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_program_page_internal
-                0x0000000000000000       0x24 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x24 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_lock
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_config_readmode
-                0x0000000000000000       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_chip
-                0x0000000000000000        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_block
-                0x0000000000000000       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_sector
-                0x0000000000000000       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_write
-                0x0000000000000000       0x28 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x28 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_write_encrypted
-                0x0000000000000000       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.esp_rom_spiflash_erase_area
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.spi_cache_mode_switch
-                0x0000000000000000      0x266 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000      0x266 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_chip_internal
-                0x0000000000000000       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_block_internal
-                0x0000000000000000       0x3c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x3c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_sector_internal
-                0x0000000000000000       0x44 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x44 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_enable_write
-                0x0000000000000000       0x3d /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x3d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_program_page_internal
-                0x0000000000000000       0xee /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0xee /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_lock
-                0x0000000000000000       0x4e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x4e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_config_readmode
-                0x0000000000000000       0xa0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0xa0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .rodata.esp_rom_spiflash_config_readmode
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_chip
-                0x0000000000000000       0x24 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x24 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_block
-                0x0000000000000000       0x66 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x66 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_sector
-                0x0000000000000000       0x65 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x65 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_write
-                0x0000000000000000       0xca /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0xca /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_write_encrypted
-                0x0000000000000000       0x5a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0x5a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_erase_area
-                0x0000000000000000       0xbe /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .xt.lit        0x0000000000000000       0xa8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .xt.prop       0x0000000000000000      0xb1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000000       0xbe /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .xt.lit        0x0000000000000000       0xa8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .xt.prop       0x0000000000000000      0xb1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .literal.rtc_init
-                0x0000000000000000       0xb8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x0000000000000000       0xb8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
  .text.rtc_init
-                0x0000000000000000      0x344 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .xt.prop       0x0000000000000000       0xf0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x0000000000000000      0x344 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .xt.lit        0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .xt.prop       0x0000000000000000       0xf0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
  .literal.rtc_clk_32k_bootstrap
-                0x0000000000000000       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_32k_enabled
-                0x0000000000000000        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_apll_enable
-                0x0000000000000000       0x50 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x50 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_slow_freq_get_hz
-                0x0000000000000000       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_from_mhz
-                0x0000000000000000        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_to_xtal
-                0x0000000000000000       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_to_pll
-                0x0000000000000000       0x38 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x38 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_set_fast
-                0x0000000000000000       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_32k_bootstrap
-                0x0000000000000000       0x3c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x3c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_32k_enabled
-                0x0000000000000000       0x1a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x1a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_apll_enable
-                0x0000000000000000      0x156 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000      0x156 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_slow_freq_get_hz
-                0x0000000000000000       0x29 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x29 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_from_mhz
-                0x0000000000000000       0x4c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x4c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_to_xtal
-                0x0000000000000000       0x6f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x6f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_to_pll
-                0x0000000000000000       0xdd /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0xdd /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_set_fast
-                0x0000000000000000       0x32 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .xt.lit        0x0000000000000000       0xd8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .xt.prop       0x0000000000000000      0xb7c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x32 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .xt.lit        0x0000000000000000       0xd8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .xt.prop       0x0000000000000000      0xb7c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cal
-                0x0000000000000000        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .literal.rtc_time_us_to_slowclk
-                0x0000000000000000        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .literal.rtc_time_get
-                0x0000000000000000       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .text          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .text          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .text.rtc_clk_cal
-                0x0000000000000000       0x52 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000       0x52 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .text.rtc_time_us_to_slowclk
-                0x0000000000000000       0x1f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000       0x1f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .text.rtc_time_slowclk_to_us
-                0x0000000000000000       0x1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000000       0x1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .text.rtc_time_get
-                0x0000000000000000       0x50 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .xt.lit        0x0000000000000000       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .xt.prop       0x0000000000000000      0x258 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .xt.lit        0x0000000000000000        0x8 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .xt.prop       0x0000000000000000       0x30 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .data          0x0000000000000000        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .bss           0x0000000000000000        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .eh_frame      0x0000000000000000       0x28 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .xt.prop       0x0000000000000000      0x264 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                0x0000000000000000       0x50 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .xt.lit        0x0000000000000000       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .xt.prop       0x0000000000000000      0x258 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .xt.lit        0x0000000000000000        0x8 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .xt.prop       0x0000000000000000       0x30 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .data          0x0000000000000000        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000000000        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000000000       0x28 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .xt.prop       0x0000000000000000      0x264 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 Memory Configuration
 
@@ -249,15 +249,15 @@ dram_seg         0x000000003fff0000 0x0000000000010000 rw
 Linker script and memory map
 
 START GROUP
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/micro-ecc/libmicro-ecc.a
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a
-LOAD /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a
-LOAD /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a
-LOAD /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a
-LOAD /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcov.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/micro-ecc/libmicro-ecc.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a
+LOAD /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a
+LOAD /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a
+LOAD /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a
+LOAD /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcov.a
 END GROUP
 
 .iram1.text     0x0000000040078000        0x0
@@ -280,16 +280,16 @@ END GROUP
  *(.dynbss)
  *(.bss)
  *(.bss.*)
- .bss.mapped    0x000000003fff0000        0x1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .bss.mapped    0x000000003fff0000        0x1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  *fill*         0x000000003fff0001        0x3 
  .bss.ram_obfs_value
-                0x000000003fff0004        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003fff0004        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .bss.words_hashed
-                0x000000003fff000c        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff000c        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .bss.s_pll_freq
-                0x000000003fff0010        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff0010        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .bss.s_cur_freq
-                0x000000003fff0014        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff0014        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  *(.gnu.linkonce.b.*)
  *(COMMON)
                 0x000000003fff0018                . = ALIGN (0x8)
@@ -300,7 +300,7 @@ END GROUP
  *(.data)
  *(.data.*)
  .data.current_read_mapping
-                0x000000003fff0018        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000003fff0018        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  *(.gnu.linkonce.d.*)
  *(.data1)
  *(.sdata)
@@ -312,665 +312,666 @@ END GROUP
  *(.jcr)
                 0x000000003fff001c                _data_end = ABSOLUTE (.)
 
-.dram0.rodata   0x000000003fff001c     0x15b8
+.dram0.rodata   0x000000003fff001c     0x1664
                 0x000000003fff001c                _rodata_start = ABSOLUTE (.)
  *(.rodata)
- .rodata        0x000000003fff001c       0x1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .rodata        0x000000003fff001c       0x1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  *(.rodata.*)
  .rodata.str1.4
-                0x000000003fff0038      0x962 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x000000003fff099a        0x2 
+                0x000000003fff0038      0xa0e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x000000003fff0a46        0x2 
  .rodata.__func__$3800
-                0x000000003fff099c       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000003fff0a48       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .rodata.str1.4
-                0x000000003fff09ac      0x28e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003fff0c3a        0x2 
+                0x000000003fff0a58      0x28e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003fff0ce6        0x2 
  .rodata.str1.4
-                0x000000003fff0c3c       0xfb /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- *fill*         0x000000003fff0d37        0x1 
+                0x000000003fff0ce8       0xfb /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ *fill*         0x000000003fff0de3        0x1 
  .rodata.str1.4
-                0x000000003fff0d38      0x45a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003fff0de4      0x45a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x49a (size before relaxing)
- *fill*         0x000000003fff1192        0x2 
+ *fill*         0x000000003fff123e        0x2 
  .rodata.str1.4
-                0x000000003fff1194       0xcc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff1240       0xcc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.padding$2493
-                0x000000003fff1260       0x40 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff130c       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.__func__$2489
-                0x000000003fff12a0       0x19 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff12b9        0x3 
+                0x000000003fff134c       0x19 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff1365        0x3 
  .rodata.__func__$2469
-                0x000000003fff12bc       0x17 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff12d3        0x1 
+                0x000000003fff1368       0x17 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff137f        0x1 
  .rodata.str1.4
-                0x000000003fff12d4      0x258 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff1380      0x258 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x255 (size before relaxing)
  .rodata.rtc_clk_xtal_freq_estimate
-                0x000000003fff152c       0x64 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff15d8       0x64 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .rodata.rtc_clk_cpu_freq_value
-                0x000000003fff1590       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff163c       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .rodata.__func__$2614
-                0x000000003fff15a4       0x17 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000003fff15bb        0x1 
+                0x000000003fff1650       0x17 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x000000003fff1667        0x1 
  .rodata.__func__$2599
-                0x000000003fff15bc       0x15 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff1668       0x15 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003fff15d1                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003fff167d                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003fff15d4                . = ((. + 0x3) & 0xfffffffffffffffc)
- *fill*         0x000000003fff15d1        0x3 
-                0x000000003fff15d4                __init_array_start = ABSOLUTE (.)
+                0x000000003fff1680                . = ((. + 0x3) & 0xfffffffffffffffc)
+ *fill*         0x000000003fff167d        0x3 
+                0x000000003fff1680                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000000003fff15d4                __init_array_end = ABSOLUTE (.)
+                0x000000003fff1680                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000000003fff15d4                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003fff1680                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003fff15d4                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003fff1680                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003fff15d4                _rodata_end = ABSOLUTE (.)
-                0x000000003fff15d4                _lit4_start = ABSOLUTE (.)
+                0x000000003fff1680                _rodata_end = ABSOLUTE (.)
+                0x000000003fff1680                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003fff15d4                _lit4_end = ABSOLUTE (.)
-                0x000000003fff15d4                . = ALIGN (0x4)
-                0x000000003fff15d4                _heap_start = ABSOLUTE (.)
+                0x000000003fff1680                _lit4_end = ABSOLUTE (.)
+                0x000000003fff1680                . = ALIGN (0x4)
+                0x000000003fff1680                _heap_start = ABSOLUTE (.)
 
-.iram.text      0x0000000040078000     0x358f
+.iram.text      0x0000000040078000     0x35eb
                 0x0000000040078000                _stext = .
                 0x0000000040078000                _text_start = ABSOLUTE (.)
  *(.literal .text .literal.* .text.* .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
  .literal.wdt_reset_cpu0_info_enable
-                0x0000000040078000        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078000        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .literal.wdt_reset_info_dump
-                0x0000000040078004       0x60 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078004       0x60 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x6c (size before relaxing)
  .literal.print_flash_info
-                0x0000000040078064       0x4c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078064       0x4c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x68 (size before relaxing)
  .literal.log_invalid_app_partition
-                0x00000000400780b0       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780b0       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x2c (size before relaxing)
  .literal.vddsdio_configure
-                0x00000000400780c0        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780c0        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                           0xc (size before relaxing)
  .literal.clock_configure
-                0x00000000400780c4       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780c4       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x20 (size before relaxing)
  .literal.uart_console_configure
-                0x00000000400780d8       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780d8       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x18 (size before relaxing)
  .literal.wdt_reset_check
-                0x00000000400780e8        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780e8        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x30 (size before relaxing)
  .literal.update_flash_config
-                0x00000000400780f4       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400780f4       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .literal.ota_select_crc
-                0x0000000040078114        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078114        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .literal.ota_select_valid
-                0x0000000040078118        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078118        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                           0x4 (size before relaxing)
  .literal.get_selected_boot_partition
-                0x0000000040078118       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078118       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x70 (size before relaxing)
  .literal.try_load_partition
-                0x0000000040078138        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078138        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x14 (size before relaxing)
  .literal.load_boot_image
-                0x000000004007813c        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004007813c        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3c (size before relaxing)
  .literal.set_cache_and_start_app
-                0x0000000040078148       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078148       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x30 (size before relaxing)
  .literal.unpack_load_app
-                0x000000004007815c       0x1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004007815c       0x1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x34 (size before relaxing)
  .literal.load_partition_table
-                0x0000000040078178       0x40 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078178       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x84 (size before relaxing)
  .literal.bootloader_main
-                0x00000000400781b8       0x2c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400781b8       0x2c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0xa4 (size before relaxing)
  .literal.__assert_func
-                0x00000000400781e4        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400781e4        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x10 (size before relaxing)
  .literal.call_start_cpu0
-                0x00000000400781e8       0x3c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400781e8       0x3c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x74 (size before relaxing)
  .literal.spi_to_esp_err
-                0x0000000040078224        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040078224        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .literal.bootloader_flash_read_allow_decrypt
-                0x000000004007822c       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000004007822c       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x30 (size before relaxing)
  .literal.bootloader_flash_read_no_decrypt
-                0x000000004007823c        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000004007823c        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x14 (size before relaxing)
  .literal.bootloader_mmap
-                0x000000004007823c       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000004007823c       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x50 (size before relaxing)
  .literal.bootloader_munmap
-                0x0000000040078250        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040078250        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x14 (size before relaxing)
  .literal.bootloader_flash_read
-                0x0000000040078250        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040078250        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x30 (size before relaxing)
  .literal.esp_partition_table_basic_verify
-                0x000000004007825c       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x000000004007825c       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
                                          0x30 (size before relaxing)
  .literal.should_map
-                0x0000000040078270        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040078270        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x10 (size before relaxing)
  .literal.verify_image_header
-                0x0000000040078270       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040078270       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x2c (size before relaxing)
  .literal.verify_segment_header
-                0x0000000040078284        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040078284        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x28 (size before relaxing)
  .literal.verify_checksum
-                0x0000000040078290        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040078290        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x1c (size before relaxing)
  .literal.verify_simple_hash
-                0x0000000040078294        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040078294        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x2c (size before relaxing)
  .literal.should_load
-                0x000000004007829c        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000004007829c        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x18 (size before relaxing)
  .literal.process_segment
-                0x00000000400782a8       0x28 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x00000000400782a8       0x28 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x7c (size before relaxing)
  .literal.esp_image_load
-                0x00000000400782d0       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x00000000400782d0       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x74 (size before relaxing)
  .literal.bootloader_sha256_start
-                0x00000000400782e4        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x00000000400782e4        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .literal.bootloader_sha256_data
-                0x00000000400782ec       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x00000000400782ec       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                                          0x30 (size before relaxing)
  .literal.bootloader_sha256_finish
-                0x000000004007830c       0x18 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000004007830c       0x18 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                                          0x4c (size before relaxing)
  .literal.bootloader_fill_random
-                0x0000000040078324        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000040078324        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .literal.bootloader_random_enable
-                0x000000004007832c       0x6c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x000000004007832c       0x6c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
                                          0x78 (size before relaxing)
  .literal.bootloader_random_disable
-                0x0000000040078398       0x1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000040078398       0x1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
                                          0x4c (size before relaxing)
  .literal.esp_log_early_timestamp
-                0x00000000400783b4        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x00000000400783b4        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .literal.esp_rom_spiflash_read_status
-                0x00000000400783bc       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783bc       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x14 (size before relaxing)
  .literal.esp_rom_spiflash_wait_idle
-                0x00000000400783cc        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783cc        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                           0xc (size before relaxing)
  .literal.esp_rom_spiflash_read_data
-                0x00000000400783d4       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783d4       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x18 (size before relaxing)
  .literal.esp_rom_spiflash_read_statushigh
-                0x00000000400783e4        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783e4        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                           0xc (size before relaxing)
  .literal.esp_rom_spiflash_write_status
-                0x00000000400783e8        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783e8        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x14 (size before relaxing)
  .literal.esp_rom_spiflash_unlock
-                0x00000000400783e8        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783e8        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x28 (size before relaxing)
  .literal.esp_rom_spiflash_read
-                0x00000000400783f4       0x3c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x00000000400783f4       0x3c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x5c (size before relaxing)
  .literal.rtc_vddsdio_get_config
-                0x0000000040078430       0x24 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x0000000040078430       0x24 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
                                          0x2c (size before relaxing)
  .literal.rtc_vddsdio_set_config
-                0x0000000040078454        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x0000000040078454        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_32k_enable_internal
-                0x0000000040078458       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078458       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x14 (size before relaxing)
  .literal.rtc_clk_32k_enable
-                0x0000000040078468        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078468        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0xc (size before relaxing)
  .literal.rtc_clk_8m_enable
-                0x000000004007846c        0xc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007846c        0xc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x10 (size before relaxing)
  .literal.rtc_clk_8m_enabled
-                0x0000000040078478        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078478        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_8md256_enabled
-                0x0000000040078478        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078478        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_xtal_freq_estimate
-                0x0000000040078478       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078478       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x3c (size before relaxing)
  .literal.rtc_clk_slow_freq_set
-                0x000000004007848c        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007848c        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0xc (size before relaxing)
  .literal.rtc_clk_slow_freq_get
-                0x000000004007848c        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007848c        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_fast_freq_set
-                0x000000004007848c        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007848c        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0xc (size before relaxing)
  .literal.rtc_clk_fast_freq_get
-                0x000000004007848c        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007848c        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_bbpll_set
-                0x000000004007848c       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007848c       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x38 (size before relaxing)
  .literal.rtc_clk_xtal_freq_get
-                0x000000004007849c        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007849c        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x1c (size before relaxing)
  .literal.rtc_clk_cpu_freq_get
-                0x00000000400784a4       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784a4       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x28 (size before relaxing)
  .literal.rtc_clk_cpu_freq_value
-                0x00000000400784b8       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784b8       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x2c (size before relaxing)
  .literal.rtc_clk_xtal_freq_update
-                0x00000000400784d8        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784d8        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_apb_freq_update
-                0x00000000400784d8        0x4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784d8        0x4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_cpu_freq_set
-                0x00000000400784dc       0x1c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784dc       0x1c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x78 (size before relaxing)
  .literal.rtc_clk_apb_freq_get
-                0x00000000400784f8        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400784f8        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x14 (size before relaxing)
  .literal.rtc_clk_init
-                0x0000000040078500       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040078500       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x94 (size before relaxing)
  .literal.rtc_clk_cal_internal
-                0x0000000040078520       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000040078520       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
                                          0x3c (size before relaxing)
  .literal.rtc_clk_cal_ratio
-                0x0000000040078540        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000040078540        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_wait_for_slow_cycle
-                0x0000000040078540        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000040078540        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
                                          0x20 (size before relaxing)
- .literal       0x0000000040078548        0x8 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .literal       0x0000000040078548        0x8 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
  .iram1.literal
-                0x0000000040078550       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
-                                         0x60 (size before relaxing)
+                0x0000000040078550       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                                         0x94 (size before relaxing)
  .text.wdt_reset_cpu0_info_enable
-                0x0000000040078580       0x27 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x00000000400785a7        0x1 
+                0x0000000040078590       0x27 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x00000000400785b7        0x1 
  .text.wdt_reset_info_dump
-                0x00000000400785a8       0xe6 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x000000004007868e        0x2 
+                0x00000000400785b8       0xe6 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x000000004007869e        0x2 
  .text.print_flash_info
-                0x0000000040078690       0xee /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400786a0       0xee /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0xf2 (size before relaxing)
- *fill*         0x000000004007877e        0x2 
+ *fill*         0x000000004007878e        0x2 
  .text.log_invalid_app_partition
-                0x0000000040078780       0x57 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078790       0x57 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x5b (size before relaxing)
- *fill*         0x00000000400787d7        0x1 
+ *fill*         0x00000000400787e7        0x1 
  .text.vddsdio_configure
-                0x00000000400787d8       0x33 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400787e8       0x33 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x37 (size before relaxing)
- *fill*         0x000000004007880b        0x1 
+ *fill*         0x000000004007881b        0x1 
  .text.clock_configure
-                0x000000004007880c       0x6e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004007881c       0x6e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x76 (size before relaxing)
- *fill*         0x000000004007887a        0x2 
+ *fill*         0x000000004007888a        0x2 
  .text.uart_console_configure
-                0x000000004007887c       0x36 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000004007888c       0x36 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3a (size before relaxing)
- *fill*         0x00000000400788b2        0x2 
+ *fill*         0x00000000400788c2        0x2 
  .text.wdt_reset_check
-                0x00000000400788b4       0xa2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400788c4       0xa2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0xae (size before relaxing)
- *fill*         0x0000000040078956        0x2 
+ *fill*         0x0000000040078966        0x2 
  .text.update_flash_config
-                0x0000000040078958       0x68 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078968       0x68 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .text.ota_select_crc
-                0x00000000400789c0       0x14 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400789d0       0x14 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .text.ota_select_valid
-                0x00000000400789d4       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x00000000400789e4       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x24 (size before relaxing)
  .text.get_selected_boot_partition
-                0x00000000400789f4      0x140 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078a04      0x140 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                         0x14c (size before relaxing)
  .text.try_load_partition
-                0x0000000040078b34       0x34 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078b44       0x34 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x38 (size before relaxing)
  .text.load_boot_image
-                0x0000000040078b68       0xa1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078b78       0xa1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0xb9 (size before relaxing)
- *fill*         0x0000000040078c09        0x3 
+ *fill*         0x0000000040078c19        0x3 
  .text.set_cache_and_start_app
-                0x0000000040078c0c       0xcf /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x0000000040078cdb        0x1 
+                0x0000000040078c1c       0xcf /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x0000000040078ceb        0x1 
  .text.unpack_load_app
-                0x0000000040078cdc       0xb2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078cec       0xb2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0xb6 (size before relaxing)
- *fill*         0x0000000040078d8e        0x2 
+ *fill*         0x0000000040078d9e        0x2 
  .text.load_partition_table
-                0x0000000040078d90      0x160 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078da0      0x160 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                         0x17c (size before relaxing)
-                0x0000000040078d90                load_partition_table
+                0x0000000040078da0                load_partition_table
  .text.bootloader_main
-                0x0000000040078ef0      0x10f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040078f00      0x10f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                         0x14b (size before relaxing)
-                0x0000000040078ef0                bootloader_main
- *fill*         0x0000000040078fff        0x1 
+                0x0000000040078f00                bootloader_main
+ *fill*         0x000000004007900f        0x1 
  .text.__assert_func
-                0x0000000040079000       0x1f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040079010       0x1f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x23 (size before relaxing)
-                0x0000000040079000                __assert_func
- *fill*         0x000000004007901f        0x1 
+                0x0000000040079010                __assert_func
+ *fill*         0x000000004007902f        0x1 
  .text.call_start_cpu0
-                0x0000000040079020      0x127 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000040079030      0x127 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                         0x133 (size before relaxing)
-                0x0000000040079020                call_start_cpu0
- *fill*         0x0000000040079147        0x1 
+                0x0000000040079030                call_start_cpu0
+ *fill*         0x0000000040079157        0x1 
  .text.spi_to_esp_err
-                0x0000000040079148       0x22 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000004007916a        0x2 
+                0x0000000040079158       0x22 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000004007917a        0x2 
  .text.bootloader_flash_read_allow_decrypt
-                0x000000004007916c       0x97 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000004007917c       0x97 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x9b (size before relaxing)
- *fill*         0x0000000040079203        0x1 
+ *fill*         0x0000000040079213        0x1 
  .text.bootloader_flash_read_no_decrypt
-                0x0000000040079204       0x32 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040079214       0x32 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x36 (size before relaxing)
- *fill*         0x0000000040079236        0x2 
+ *fill*         0x0000000040079246        0x2 
  .text.bootloader_mmap
-                0x0000000040079238       0xb1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040079248       0xb1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0xb9 (size before relaxing)
-                0x0000000040079238                bootloader_mmap
- *fill*         0x00000000400792e9        0x3 
+                0x0000000040079248                bootloader_mmap
+ *fill*         0x00000000400792f9        0x3 
  .text.bootloader_munmap
-                0x00000000400792ec       0x36 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                0x00000000400792ec                bootloader_munmap
- *fill*         0x0000000040079322        0x2 
+                0x00000000400792fc       0x36 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x00000000400792fc                bootloader_munmap
+ *fill*         0x0000000040079332        0x2 
  .text.bootloader_flash_read
-                0x0000000040079324       0x86 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                0x0000000040079324                bootloader_flash_read
- *fill*         0x00000000400793aa        0x2 
+                0x0000000040079334       0x86 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040079334                bootloader_flash_read
+ *fill*         0x00000000400793ba        0x2 
  .text.esp_partition_table_basic_verify
-                0x00000000400793ac       0xb1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x00000000400793bc       0xb1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
                                          0xb5 (size before relaxing)
-                0x00000000400793ac                esp_partition_table_basic_verify
- *fill*         0x000000004007945d        0x3 
+                0x00000000400793bc                esp_partition_table_basic_verify
+ *fill*         0x000000004007946d        0x3 
  .text.should_map
-                0x0000000040079460       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040079470       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .text.verify_image_header
-                0x0000000040079490       0x7e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x000000004007950e        0x2 
+                0x00000000400794a0       0x7e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x000000004007951e        0x2 
  .text.verify_segment_header
-                0x0000000040079510       0x71 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040079520       0x71 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x79 (size before relaxing)
- *fill*         0x0000000040079581        0x3 
+ *fill*         0x0000000040079591        0x3 
  .text.verify_checksum
-                0x0000000040079584       0x87 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040079594       0x87 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x8f (size before relaxing)
- *fill*         0x000000004007960b        0x1 
+ *fill*         0x000000004007961b        0x1 
  .text.verify_simple_hash
-                0x000000004007960c       0x5b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000004007961c       0x5b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x6a (size before relaxing)
- *fill*         0x0000000040079667        0x1 
+ *fill*         0x0000000040079677        0x1 
  .text.should_load
-                0x0000000040079668       0x44 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040079678       0x44 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x48 (size before relaxing)
  .text.process_segment
-                0x00000000400796ac      0x1bd /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x00000000400796bc      0x1bd /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x1d1 (size before relaxing)
- *fill*         0x0000000040079869        0x3 
+ *fill*         0x0000000040079879        0x3 
  .text.esp_image_load
-                0x000000004007986c      0x24a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000004007987c      0x24a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x262 (size before relaxing)
-                0x000000004007986c                esp_image_load
- *fill*         0x0000000040079ab6        0x2 
+                0x000000004007987c                esp_image_load
+ *fill*         0x0000000040079ac6        0x2 
  .text.bootloader_sha256_start
-                0x0000000040079ab8       0x12 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
-                0x0000000040079ab8                bootloader_sha256_start
- *fill*         0x0000000040079aca        0x2 
+                0x0000000040079ac8       0x12 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x0000000040079ac8                bootloader_sha256_start
+ *fill*         0x0000000040079ada        0x2 
  .text.bootloader_sha256_data
-                0x0000000040079acc       0xa1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x0000000040079adc       0xa1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                                          0xa9 (size before relaxing)
-                0x0000000040079acc                bootloader_sha256_data
- *fill*         0x0000000040079b6d        0x3 
+                0x0000000040079adc                bootloader_sha256_data
+ *fill*         0x0000000040079b7d        0x3 
  .text.bootloader_sha256_finish
-                0x0000000040079b70       0xdc /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x0000000040079b80       0xdc /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
                                          0xf0 (size before relaxing)
-                0x0000000040079b70                bootloader_sha256_finish
+                0x0000000040079b80                bootloader_sha256_finish
  .text.bootloader_fill_random
-                0x0000000040079c4c       0x59 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                0x0000000040079c4c                bootloader_fill_random
- *fill*         0x0000000040079ca5        0x3 
+                0x0000000040079c5c       0x59 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000040079c5c                bootloader_fill_random
+ *fill*         0x0000000040079cb5        0x3 
  .text.bootloader_random_enable
-                0x0000000040079ca8      0x1d5 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                0x0000000040079ca8                bootloader_random_enable
- *fill*         0x0000000040079e7d        0x3 
+                0x0000000040079cb8      0x1d5 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000040079cb8                bootloader_random_enable
+ *fill*         0x0000000040079e8d        0x3 
  .text.bootloader_random_disable
-                0x0000000040079e80      0x11c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
-                0x0000000040079e80                bootloader_random_disable
+                0x0000000040079e90      0x11c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x0000000040079e90                bootloader_random_disable
  .text.esp_log_early_timestamp
-                0x0000000040079f9c       0x1f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
-                0x0000000040079f9c                esp_log_timestamp
-                0x0000000040079f9c                esp_log_early_timestamp
- *fill*         0x0000000040079fbb        0x1 
+                0x0000000040079fac       0x1f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000040079fac                esp_log_timestamp
+                0x0000000040079fac                esp_log_early_timestamp
+ *fill*         0x0000000040079fcb        0x1 
  .text.esp_rom_spiflash_read_status
-                0x0000000040079fbc       0x61 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x0000000040079fbc                esp_rom_spiflash_read_status
- *fill*         0x000000004007a01d        0x3 
+                0x0000000040079fcc       0x61 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040079fcc                esp_rom_spiflash_read_status
+ *fill*         0x000000004007a02d        0x3 
  .text.esp_rom_spiflash_wait_idle
-                0x000000004007a020       0x32 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004007a020                esp_rom_spiflash_wait_idle
- *fill*         0x000000004007a052        0x2 
+                0x000000004007a030       0x32 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004007a030                esp_rom_spiflash_wait_idle
+ *fill*         0x000000004007a062        0x2 
  .text.esp_rom_spiflash_read_data
-                0x000000004007a054       0xe2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- *fill*         0x000000004007a136        0x2 
+                0x000000004007a064       0xe2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ *fill*         0x000000004007a146        0x2 
  .text.esp_rom_spiflash_read_statushigh
-                0x000000004007a138       0x21 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004007a138                esp_rom_spiflash_read_statushigh
- *fill*         0x000000004007a159        0x3 
+                0x000000004007a148       0x21 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004007a148                esp_rom_spiflash_read_statushigh
+ *fill*         0x000000004007a169        0x3 
  .text.esp_rom_spiflash_write_status
-                0x000000004007a15c       0x34 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004007a16c       0x34 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x38 (size before relaxing)
-                0x000000004007a15c                esp_rom_spiflash_write_status
+                0x000000004007a16c                esp_rom_spiflash_write_status
  .text.esp_rom_spiflash_unlock
-                0x000000004007a190       0x6a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004007a1a0       0x6a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x7e (size before relaxing)
-                0x000000004007a190                esp_rom_spiflash_unlock
- *fill*         0x000000004007a1fa        0x2 
+                0x000000004007a1a0                esp_rom_spiflash_unlock
+ *fill*         0x000000004007a20a        0x2 
  .text.esp_rom_spiflash_read
-                0x000000004007a1fc      0x284 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004007a1fc                esp_rom_spiflash_read
+                0x000000004007a20c      0x284 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004007a20c                esp_rom_spiflash_read
  .text.rtc_vddsdio_get_config
-                0x000000004007a480      0x10a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
-                0x000000004007a480                rtc_vddsdio_get_config
- *fill*         0x000000004007a58a        0x2 
+                0x000000004007a490      0x10a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x000000004007a490                rtc_vddsdio_get_config
+ *fill*         0x000000004007a59a        0x2 
  .text.rtc_vddsdio_set_config
-                0x000000004007a58c       0x46 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
-                0x000000004007a58c                rtc_vddsdio_set_config
- *fill*         0x000000004007a5d2        0x2 
+                0x000000004007a59c       0x46 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x000000004007a59c                rtc_vddsdio_set_config
+ *fill*         0x000000004007a5e2        0x2 
  .text.rtc_clk_32k_enable_internal
-                0x000000004007a5d4       0x81 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000004007a655        0x3 
+                0x000000004007a5e4       0x81 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x000000004007a665        0x3 
  .text.rtc_clk_32k_enable
-                0x000000004007a658       0x2d /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a658                rtc_clk_32k_enable
- *fill*         0x000000004007a685        0x3 
+                0x000000004007a668       0x2d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a668                rtc_clk_32k_enable
+ *fill*         0x000000004007a695        0x3 
  .text.rtc_clk_8m_enable
-                0x000000004007a688       0x99 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a688                rtc_clk_8m_enable
- *fill*         0x000000004007a721        0x3 
+                0x000000004007a698       0x99 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a698                rtc_clk_8m_enable
+ *fill*         0x000000004007a731        0x3 
  .text.rtc_clk_8m_enabled
-                0x000000004007a724       0x19 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a724                rtc_clk_8m_enabled
- *fill*         0x000000004007a73d        0x3 
+                0x000000004007a734       0x19 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a734                rtc_clk_8m_enabled
+ *fill*         0x000000004007a74d        0x3 
  .text.rtc_clk_8md256_enabled
-                0x000000004007a740       0x1a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a740                rtc_clk_8md256_enabled
- *fill*         0x000000004007a75a        0x2 
+                0x000000004007a750       0x1a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a750                rtc_clk_8md256_enabled
+ *fill*         0x000000004007a76a        0x2 
  .text.rtc_clk_xtal_freq_estimate
-                0x000000004007a75c       0x9e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a76c       0x9e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0xa6 (size before relaxing)
- *fill*         0x000000004007a7fa        0x2 
+ *fill*         0x000000004007a80a        0x2 
  .text.rtc_clk_slow_freq_set
-                0x000000004007a7fc       0x27 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a7fc                rtc_clk_slow_freq_set
- *fill*         0x000000004007a823        0x1 
+                0x000000004007a80c       0x27 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a80c                rtc_clk_slow_freq_set
+ *fill*         0x000000004007a833        0x1 
  .text.rtc_clk_slow_freq_get
-                0x000000004007a824       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a824                rtc_clk_slow_freq_get
+                0x000000004007a834       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a834                rtc_clk_slow_freq_get
  .text.rtc_clk_fast_freq_set
-                0x000000004007a834       0x2a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a834                rtc_clk_fast_freq_set
- *fill*         0x000000004007a85e        0x2 
+                0x000000004007a844       0x2a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a844                rtc_clk_fast_freq_set
+ *fill*         0x000000004007a86e        0x2 
  .text.rtc_clk_fast_freq_get
-                0x000000004007a860       0x10 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007a860                rtc_clk_fast_freq_get
+                0x000000004007a870       0x10 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a870                rtc_clk_fast_freq_get
  .text.rtc_clk_bbpll_set
-                0x000000004007a870      0x170 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a880      0x170 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x178 (size before relaxing)
-                0x000000004007a870                rtc_clk_bbpll_set
+                0x000000004007a880                rtc_clk_bbpll_set
  .text.rtc_clk_xtal_freq_get
-                0x000000004007a9e0       0x38 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007a9f0       0x38 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x3c (size before relaxing)
-                0x000000004007a9e0                rtc_get_xtal
-                0x000000004007a9e0                rtc_clk_xtal_freq_get
+                0x000000004007a9f0                rtc_get_xtal
+                0x000000004007a9f0                rtc_clk_xtal_freq_get
  .text.rtc_clk_cpu_freq_get
-                0x000000004007aa18       0x88 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007aa28       0x88 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x94 (size before relaxing)
-                0x000000004007aa18                rtc_clk_cpu_freq_get
+                0x000000004007aa28                rtc_clk_cpu_freq_get
  .text.rtc_clk_cpu_freq_value
-                0x000000004007aaa0       0x45 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007aaa0                rtc_clk_cpu_freq_value
- *fill*         0x000000004007aae5        0x3 
+                0x000000004007aab0       0x45 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007aab0                rtc_clk_cpu_freq_value
+ *fill*         0x000000004007aaf5        0x3 
  .text.rtc_clk_xtal_freq_update
-                0x000000004007aae8       0x12 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007aaf8       0x12 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x16 (size before relaxing)
-                0x000000004007aae8                rtc_clk_xtal_freq_update
- *fill*         0x000000004007aafa        0x2 
+                0x000000004007aaf8                rtc_clk_xtal_freq_update
+ *fill*         0x000000004007ab0a        0x2 
  .text.rtc_clk_apb_freq_update
-                0x000000004007aafc       0x13 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007ab0c       0x13 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x16 (size before relaxing)
-                0x000000004007aafc                rtc_clk_apb_freq_update
- *fill*         0x000000004007ab0f        0x1 
+                0x000000004007ab0c                rtc_clk_apb_freq_update
+ *fill*         0x000000004007ab1f        0x1 
  .text.rtc_clk_cpu_freq_set
-                0x000000004007ab10      0x1c4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007ab20      0x1c4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x1d8 (size before relaxing)
-                0x000000004007ab10                rtc_clk_cpu_freq_set
+                0x000000004007ab20                rtc_clk_cpu_freq_set
  .text.rtc_clk_apb_freq_get
-                0x000000004007acd4       0x2a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004007acd4                rtc_clk_apb_freq_get
- *fill*         0x000000004007acfe        0x2 
+                0x000000004007ace4       0x2a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007ace4                rtc_clk_apb_freq_get
+ *fill*         0x000000004007ad0e        0x2 
  .text.rtc_clk_init
-                0x000000004007ad00      0x182 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007ad10      0x182 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x1ba (size before relaxing)
-                0x000000004007ad00                rtc_clk_init
- *fill*         0x000000004007ae82        0x2 
+                0x000000004007ad10                rtc_clk_init
+ *fill*         0x000000004007ae92        0x2 
  .text.rtc_clk_cal_internal
-                0x000000004007ae84      0x161 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- *fill*         0x000000004007afe5        0x3 
+                0x000000004007ae94      0x161 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ *fill*         0x000000004007aff5        0x3 
  .text.rtc_clk_cal_ratio
-                0x000000004007afe8       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x000000004007aff8       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
                                          0x24 (size before relaxing)
-                0x000000004007afe8                rtc_clk_cal_ratio
+                0x000000004007aff8                rtc_clk_cal_ratio
  .text.rtc_clk_wait_for_slow_cycle
-                0x000000004007b008       0x79 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
-                0x000000004007b008                rtc_clk_wait_for_slow_cycle
- *fill*         0x000000004007b081        0x3 
- .text          0x000000004007b084       0x26 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
-                0x000000004007b084                __bswapsi2
- *fill*         0x000000004007b0aa        0x2 
+                0x000000004007b018       0x79 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x000000004007b018                rtc_clk_wait_for_slow_cycle
+ *fill*         0x000000004007b091        0x3 
+ .text          0x000000004007b094       0x26 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+                0x000000004007b094                __bswapsi2
+ *fill*         0x000000004007b0ba        0x2 
  .text.index_to_partition
-                0x000000004007b0ac       0x48 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
- *fill*         0x000000004007b0f4        0x0 
+                0x000000004007b0bc       0x48 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
+ *fill*         0x000000004007b104        0x0 
  .text.clk_val_is_valid
-                0x000000004007b0f4       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007b104       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.reg_val_to_clk_val
-                0x000000004007b114        0x8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004007b124        0x8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.clk_val_to_reg_val
-                0x000000004007b11c        0xe /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x0 
- *fill*         0x000000004007b12a        0x2 
- .text          0x000000004007b12c      0x281 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
-                0x000000004007b12c                __udivdi3
+                0x000000004007b12c        0xe /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x0 
+ *fill*         0x000000004007b13a        0x2 
+ .text          0x000000004007b13c      0x281 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                0x000000004007b13c                __udivdi3
  *(.iram1 .iram1.*)
- *fill*         0x000000004007b3ad        0x3 
- .iram1         0x000000004007b3b0      0x1df /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x000000004007b58f        0x0 
+ *fill*         0x000000004007b3bd        0x3 
+ .iram1         0x000000004007b3c0      0x22b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                                        0x233 (size before relaxing)
+ *fill*         0x000000004007b5eb        0x0 
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x000000004007b58f                _text_end = ABSOLUTE (.)
-                0x000000004007b58f                _etext = .
+                0x000000004007b5eb                _text_end = ABSOLUTE (.)
+                0x000000004007b5eb                _etext = .
                 [!provide]                        PROVIDE (abort, 0x4000bba4)
                 [!provide]                        PROVIDE (__absvdi2, 0x4006387c)
                 [!provide]                        PROVIDE (__absvsi2, 0x40063868)
@@ -2796,180 +2797,180 @@ END GROUP
                 [!provide]                        PROVIDE (I2S1, 0x3ff6d000)
                 [!provide]                        PROVIDE (UART2, 0x3ff6e000)
                 0x0000000040008550                PROVIDE (ets_update_cpu_frequency, 0x40008550)
-OUTPUT(/home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader.elf elf32-xtensa-le)
+OUTPUT(/home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader.elf elf32-xtensa-le)
 
 .debug_frame    0x0000000000000000      0xb68
- .debug_frame   0x0000000000000000      0x220 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_frame   0x0000000000000220       0xd0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_frame   0x00000000000002f0       0x28 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_frame   0x0000000000000318       0xe8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_frame   0x0000000000000400       0x58 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_frame   0x0000000000000458       0x58 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_frame   0x00000000000004b0       0x70 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_frame   0x0000000000000520      0x208 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_frame   0x0000000000000728       0x58 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_frame   0x0000000000000780      0x2e0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_frame   0x0000000000000a60       0xb8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_frame   0x0000000000000b18       0x28 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_frame   0x0000000000000b40       0x28 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_frame   0x0000000000000000      0x220 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_frame   0x0000000000000220       0xd0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_frame   0x00000000000002f0       0x28 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_frame   0x0000000000000318       0xe8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_frame   0x0000000000000400       0x58 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_frame   0x0000000000000458       0x58 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_frame   0x00000000000004b0       0x70 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_frame   0x0000000000000520      0x208 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_frame   0x0000000000000728       0x58 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_frame   0x0000000000000780      0x2e0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_frame   0x0000000000000a60       0xb8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_frame   0x0000000000000b18       0x28 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_frame   0x0000000000000b40       0x28 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_info     0x0000000000000000     0x87b9
- .debug_info    0x0000000000000000     0x29f7 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_info    0x00000000000029f7      0xc05 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_info    0x00000000000035fc      0x381 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_info    0x000000000000397d     0x11e9 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_info    0x0000000000004b66      0x44d /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_info    0x0000000000004fb3      0x278 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_info    0x000000000000522b      0x900 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_info    0x0000000000005b2b      0xaf5 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_info    0x0000000000006620      0x3d8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_info    0x00000000000069f8     0x1391 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_info    0x0000000000007d89      0x39b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_info    0x0000000000008124       0xcd /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_info    0x00000000000081f1      0x5c8 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+.debug_info     0x0000000000000000     0x885d
+ .debug_info    0x0000000000000000     0x2a9b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_info    0x0000000000002a9b      0xc05 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_info    0x00000000000036a0      0x381 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_info    0x0000000000003a21     0x11e9 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_info    0x0000000000004c0a      0x44d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_info    0x0000000000005057      0x278 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_info    0x00000000000052cf      0x900 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_info    0x0000000000005bcf      0xaf5 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_info    0x00000000000066c4      0x3d8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_info    0x0000000000006a9c     0x1391 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_info    0x0000000000007e2d      0x39b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_info    0x00000000000081c8       0xcd /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_info    0x0000000000008295      0x5c8 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .debug_abbrev   0x0000000000000000     0x1a03
- .debug_abbrev  0x0000000000000000      0x4e2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_abbrev  0x00000000000004e2      0x22f /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_abbrev  0x0000000000000711      0x16c /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_abbrev  0x000000000000087d      0x2a4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_abbrev  0x0000000000000b21      0x17d /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_abbrev  0x0000000000000c9e      0x126 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_abbrev  0x0000000000000dc4      0x1f3 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_abbrev  0x0000000000000fb7      0x22e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_abbrev  0x00000000000011e5      0x15d /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_abbrev  0x0000000000001342      0x388 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_abbrev  0x00000000000016ca      0x17a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_abbrev  0x0000000000001844       0x60 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_abbrev  0x00000000000018a4      0x15f /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000000000000000      0x4e2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_abbrev  0x00000000000004e2      0x22f /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_abbrev  0x0000000000000711      0x16c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_abbrev  0x000000000000087d      0x2a4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_abbrev  0x0000000000000b21      0x17d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_abbrev  0x0000000000000c9e      0x126 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_abbrev  0x0000000000000dc4      0x1f3 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_abbrev  0x0000000000000fb7      0x22e /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_abbrev  0x00000000000011e5      0x15d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_abbrev  0x0000000000001342      0x388 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_abbrev  0x00000000000016ca      0x17a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_abbrev  0x0000000000001844       0x60 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_abbrev  0x00000000000018a4      0x15f /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .debug_loc      0x0000000000000000     0x4b90
- .debug_loc     0x0000000000000000     0x1055 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_loc     0x0000000000001055      0x638 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_loc     0x000000000000168d      0x116 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_loc     0x00000000000017a3      0xae1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_loc     0x0000000000002284      0x135 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_loc     0x00000000000023b9       0x91 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_loc     0x000000000000244a      0x4ad /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_loc     0x00000000000028f7      0xa20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_loc     0x0000000000003317      0x2d2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_loc     0x00000000000035e9      0x9d4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_loc     0x0000000000003fbd      0x1ca /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_loc     0x0000000000004187       0x21 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_loc     0x00000000000041a8      0x9e8 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_loc     0x0000000000000000     0x1055 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_loc     0x0000000000001055      0x638 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_loc     0x000000000000168d      0x116 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_loc     0x00000000000017a3      0xae1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_loc     0x0000000000002284      0x135 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_loc     0x00000000000023b9       0x91 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_loc     0x000000000000244a      0x4ad /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_loc     0x00000000000028f7      0xa20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_loc     0x0000000000003317      0x2d2 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_loc     0x00000000000035e9      0x9d4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_loc     0x0000000000003fbd      0x1ca /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_loc     0x0000000000004187       0x21 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_loc     0x00000000000041a8      0x9e8 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .debug_aranges  0x0000000000000000      0x4c0
  .debug_aranges
-                0x0000000000000000       0xc8 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x0000000000000000       0xc8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
  .debug_aranges
-                0x00000000000000c8       0x58 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x00000000000000c8       0x58 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .debug_aranges
-                0x0000000000000120       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x0000000000000120       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .debug_aranges
-                0x0000000000000140       0x60 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000000000140       0x60 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
  .debug_aranges
-                0x00000000000001a0       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x00000000000001a0       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .debug_aranges
-                0x00000000000001d0       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                0x00000000000001d0       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
  .debug_aranges
-                0x0000000000000200       0x38 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                0x0000000000000200       0x38 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
  .debug_aranges
-                0x0000000000000238       0xc0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000000000238       0xc0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .debug_aranges
-                0x00000000000002f8       0x30 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+                0x00000000000002f8       0x30 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
  .debug_aranges
-                0x0000000000000328      0x108 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000328      0x108 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .debug_aranges
-                0x0000000000000430       0x50 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000000000430       0x50 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
  .debug_aranges
-                0x0000000000000480       0x20 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+                0x0000000000000480       0x20 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
  .debug_aranges
-                0x00000000000004a0       0x20 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                0x00000000000004a0       0x20 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .debug_ranges   0x0000000000000000      0x4a8
- .debug_ranges  0x0000000000000000       0xd0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_ranges  0x00000000000000d0       0x48 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_ranges  0x0000000000000118       0x28 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_ranges  0x0000000000000140       0x68 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_ranges  0x00000000000001a8       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_ranges  0x00000000000001c8       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_ranges  0x00000000000001e8       0x28 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_ranges  0x0000000000000210       0xb0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_ranges  0x00000000000002c0       0x20 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_ranges  0x00000000000002e0      0x128 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_ranges  0x0000000000000408       0x40 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_ranges  0x0000000000000448       0x60 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_ranges  0x0000000000000000       0xd0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_ranges  0x00000000000000d0       0x48 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_ranges  0x0000000000000118       0x28 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_ranges  0x0000000000000140       0x68 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_ranges  0x00000000000001a8       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_ranges  0x00000000000001c8       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_ranges  0x00000000000001e8       0x28 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_ranges  0x0000000000000210       0xb0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_ranges  0x00000000000002c0       0x20 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_ranges  0x00000000000002e0      0x128 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_ranges  0x0000000000000408       0x40 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_ranges  0x0000000000000448       0x60 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_line     0x0000000000000000     0x4e36
- .debug_line    0x0000000000000000      0xf33 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_line    0x0000000000000f33      0x578 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x00000000000014ab      0x2d4 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_line    0x000000000000177f      0xa07 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_line    0x0000000000002186      0x3c5 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_line    0x000000000000254b      0x38b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .debug_line    0x00000000000028d6      0x4e2 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .debug_line    0x0000000000002db8      0xad0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_line    0x0000000000003888      0x3c0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .debug_line    0x0000000000003c48      0xc3e /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .debug_line    0x0000000000004886      0x399 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .debug_line    0x0000000000004c1f       0x89 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .debug_line    0x0000000000004ca8      0x18e /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+.debug_line     0x0000000000000000     0x4f06
+ .debug_line    0x0000000000000000      0xf8d /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .debug_line    0x0000000000000f8d      0x586 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x0000000000001513      0x2e0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x00000000000017f3      0xa1b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x000000000000220e      0x3d1 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_line    0x00000000000025df      0x395 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .debug_line    0x0000000000002974      0x4ee /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .debug_line    0x0000000000002e62      0xad8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_line    0x000000000000393a      0x3c8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .debug_line    0x0000000000003d02      0xc4a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .debug_line    0x000000000000494c      0x3a3 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .debug_line    0x0000000000004cef       0x89 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_line    0x0000000000004d78      0x18e /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
-.debug_str      0x0000000000000000     0x2609
- .debug_str     0x0000000000000000      0xfd3 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
-                                       0x10c2 (size before relaxing)
- .debug_str     0x0000000000000fd3      0x277 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                                        0x590 (size before relaxing)
- .debug_str     0x000000000000124a       0x65 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                                        0x391 (size before relaxing)
- .debug_str     0x00000000000012af      0x2f6 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
-                                        0x9e3 (size before relaxing)
- .debug_str     0x00000000000015a5       0xf7 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
-                                        0x2ba (size before relaxing)
- .debug_str     0x000000000000169c       0x72 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+.debug_str      0x0000000000000000     0x2627
+ .debug_str     0x0000000000000000      0xfd7 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+                                       0x10c6 (size before relaxing)
+ .debug_str     0x0000000000000fd7      0x27b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                                        0x594 (size before relaxing)
+ .debug_str     0x0000000000001252       0x67 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                                        0x395 (size before relaxing)
+ .debug_str     0x00000000000012b9      0x2f8 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                                        0x9e7 (size before relaxing)
+ .debug_str     0x00000000000015b1       0xf9 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                                        0x2bc (size before relaxing)
+ .debug_str     0x00000000000016aa       0x74 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+                                        0x237 (size before relaxing)
+ .debug_str     0x000000000000171e      0x1a4 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+                                        0x358 (size before relaxing)
+ .debug_str     0x00000000000018c2      0x487 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                                        0x753 (size before relaxing)
+ .debug_str     0x0000000000001d49       0xb9 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
                                         0x233 (size before relaxing)
- .debug_str     0x000000000000170e      0x1a0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
-                                        0x354 (size before relaxing)
- .debug_str     0x00000000000018ae      0x485 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                                        0x751 (size before relaxing)
- .debug_str     0x0000000000001d33       0xb7 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
-                                        0x231 (size before relaxing)
- .debug_str     0x0000000000001dea      0x4e1 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                                        0x8f0 (size before relaxing)
- .debug_str     0x00000000000022cb      0x12a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
-                                        0x36c (size before relaxing)
- .debug_str     0x00000000000023f5      0x138 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .debug_str     0x0000000000001e02      0x4e5 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                                        0x8f4 (size before relaxing)
+ .debug_str     0x00000000000022e7      0x12c /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+                                        0x36e (size before relaxing)
+ .debug_str     0x0000000000002413      0x138 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
                                         0x1de (size before relaxing)
- .debug_str     0x000000000000252d       0xdc /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x000000000000254b       0xdc /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
                                         0x258 (size before relaxing)
 
 .comment        0x0000000000000000       0x3a
- .comment       0x0000000000000000       0x3a /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .comment       0x0000000000000000       0x3a /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
                                          0x3b (size before relaxing)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .comment       0x000000000000003a       0x3b /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .comment       0x000000000000003a       0x3b /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
 
 .xtensa.info    0x0000000000000000       0x38
- .xtensa.info   0x0000000000000000       0x38 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/log/liblog.a(log.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/Proyectos/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
- .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .xtensa.info   0x0000000000000000       0x38 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/main/libmain.a(bootloader_start.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_random.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/log/liblog.a(log.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_init.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/PruebaBLE/ble_chaleco/build/bootloader/soc/libsoc.a(rtc_time.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_bswapsi2.o)
+ .xtensa.info   0x0000000000000038        0x0 /home/sferraro/esp32/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
