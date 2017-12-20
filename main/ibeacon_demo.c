@@ -41,14 +41,14 @@
 #include "esp_event_loop.h"
 #include "esp_log.h"
 
-#define WIFI_SSID "Wifi_Interno"
-#define WIFI_PASS "1nst1tuc10n4l"
+#define WIFI_SSID "wifi"
+#define WIFI_PASS "secret1703secret1703"
 
 #define PIN_BLUE GPIO_NUM_23
 #define PIN_RED GPIO_NUM_22
 #define GPIO_OUTPUT_PINS  ((1ULL<<PIN_RED) | (1ULL<<PIN_BLUE))
 
-static const char* DEMO_TAG = "IBEACON_DEMO";
+static const char* DEMO_TAG = "CHALECO";
 extern esp_ble_ibeacon_vendor_t vendor_config;
 
 ///Declare static functions
@@ -113,7 +113,7 @@ static void esp_gap_cb(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *par
 		bssi=scan_result->scan_rst.rssi;
                // ESP_LOGI(DEMO_TAG, "RSSI of packet:%d dbm", scan_result->scan_rst.rssi);
                 //ESP_LOGI(DEMO_TAG, "Service ID:%d ", ibeacon_data->ibeacon_head.service_id);
-                ESP_LOGI(DEMO_TAG, "Packet rssi %d serv_id %d\n",bssi,bserv);
+                //ESP_LOGI(DEMO_TAG, "Packet rssi %d serv_id %d\n",bssi,bserv);
 		if (bserv==0x1703){
 		  xEventGroupSetBits(pkt_event_group, PKT_BIT);
                   //ESP_LOGI(DEMO_TAG, "Packet Baliza.");
@@ -190,20 +190,32 @@ void ble_ibeacon_init(void)
 
 
 // Wifi event handler
-static esp_err_t event_handler(void *ctx, system_event_t *event)
+static esp_err_t wifi_event_handler(void *ctx, system_event_t *event)
 {
-    switch(event->event_id) {
+   printf("Evento %d\n",event->event_id);
+   switch(event->event_id) {
 		
-    case SYSTEM_EVENT_STA_START:
-        esp_wifi_connect();
+        case SYSTEM_EVENT_STA_START:
+	     ESP_ERROR_CHECK(esp_wifi_connect());
+	     printf("connectando...!\n");
         break;
     
 	case SYSTEM_EVENT_STA_GOT_IP:
-        xEventGroupSetBits(wifi_event_group, CONNECTED_BIT);
+             xEventGroupSetBits(wifi_event_group, CONNECTED_BIT);
+	     printf("tengo ip!\n");
+        break;
+	
+	case SYSTEM_EVENT_STA_CONNECTED:
+	     printf("Evento Conectado!\n");
+        break;
+	
+	case SYSTEM_EVENT_STA_AUTHMODE_CHANGE:
+	     printf("Evento authmode!\n");
         break;
     
 	case SYSTEM_EVENT_STA_DISCONNECTED:
-		xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
+	     xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
+	     printf("Desconectado !\n");
         break;
     
 	default:
@@ -215,20 +227,24 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
 
 void main_task(void *pvParameter)
 {
-	// wait for connection
-	printf("Main task: waiting for connection to the wifi network... ");
-	xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
-	printf("connected!\n");
-	
-	// print the local IP address
-	tcpip_adapter_ip_info_t ip_info;
-	ESP_ERROR_CHECK(tcpip_adapter_get_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info));
-	printf("IP Address:  %s\n", ip4addr_ntoa(&ip_info.ip));
-	printf("Subnet mask: %s\n", ip4addr_ntoa(&ip_info.netmask));
-	printf("Gateway:     %s\n", ip4addr_ntoa(&ip_info.gw));
-	
 	while(1) {
-		vTaskDelay(1000 / portTICK_RATE_MS);
+	   // wait for connection
+	   printf("Main task: waiting for connection to the wifi network...\n");
+	   xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+	   printf("connected!\n");
+	
+	   // print the local IP address
+	   tcpip_adapter_ip_info_t ip_info;
+	   ESP_ERROR_CHECK(tcpip_adapter_get_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info));
+	   printf("IP Address:  %s\n", ip4addr_ntoa(&ip_info.ip));
+	   printf("Subnet mask: %s\n", ip4addr_ntoa(&ip_info.netmask));
+	   printf("Gateway:     %s\n", ip4addr_ntoa(&ip_info.gw));
+	   printf("Sube Datos !\n");
+	   vTaskDelay(200000 / portTICK_RATE_MS);
+           ESP_ERROR_CHECK(esp_wifi_stop());
+	   printf("Desconecto!\n");
+	   vTaskDelay(200000 / portTICK_RATE_MS);
+           ESP_ERROR_CHECK(esp_wifi_start());
 	}
 }
 
@@ -236,9 +252,8 @@ void pkt_led(void *pvParameter)
 {
 	while(1) {
 	   // wait for connection
-      	      printf("Pkt Led: Esperando... ");
+      	      printf("Pkt Led: Esperando...\n");
 	      xEventGroupWaitBits(pkt_event_group, PKT_BIT, true, true, portMAX_DELAY);
-	      printf("Pkt Led: activado\n");
               gpio_set_level(PIN_BLUE, 1);
 	      vTaskDelay(500 / portTICK_RATE_MS);
      	      gpio_set_level(PIN_BLUE, 0);
@@ -249,12 +264,13 @@ void alarm_led(void *pvParameter)
 {
 	while(1) {
 	   // wait for connection
-      	      printf("Alarm Led: Esperando... ");
+      	      printf("Alarm Led: Esperando...\n");
 	      xEventGroupWaitBits(alarm_event_group, ALARM_BIT, true, true, portMAX_DELAY);
 	      printf("ALARM Led: activado\n");
 	      gpio_set_level(PIN_RED, 1);
 	      vTaskDelay(5000 / portTICK_PERIOD_MS);
 	      gpio_set_level(PIN_RED, 0);
+	      printf("ALARM Led: Desactivado\n");
 	}
 }
 
@@ -286,7 +302,7 @@ void app_main()
     tcpip_adapter_init();
 
     // initialize the wifi event handler
-    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+    ESP_ERROR_CHECK(esp_event_loop_init(wifi_event_handler, NULL));
 	
     // initialize the wifi stack in STAtion mode with config in RAM
     wifi_init_config_t wifi_init_config = WIFI_INIT_CONFIG_DEFAULT();
@@ -299,11 +315,12 @@ void app_main()
        .sta = {
            .ssid = WIFI_SSID,
            .password = WIFI_PASS,
+    //       .bssid_set = 0,
        },
     };
     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
-    ESP_ERROR_CHECK(esp_wifi_start());
     printf("Connecting to %s\n", WIFI_SSID);
+    ESP_ERROR_CHECK(esp_wifi_start());
 	
     // start the main task
     xTaskCreate(&main_task, "main_task", 2048, NULL, 5, NULL);
