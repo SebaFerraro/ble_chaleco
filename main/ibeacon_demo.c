@@ -1,21 +1,3 @@
-// Copyright 2015-2017 Espressif Systems (Shanghai) PTE LTD // // Licensed under the Apache License, Version 2.0 (the "License"); // you may not use this file except in compliance with the License.  // You may obtain a copy of the License at //     http://www.apache.org/licenses/LICENSE-2.0 // // Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
-
-/****************************************************************************
-*
-* This file is for iBeacon demo. It supports both iBeacon sender and receiver
-* which is distinguished by macros IBEACON_SENDER and IBEACON_RECEIVER,
-*
-* iBeacon is a trademark of Apple Inc. Before building devices which use iBeacon technology,
-* visit https://developer.apple.com/ibeacon/ to obtain a license.
-*
-****************************************************************************/
-
 #include <stdint.h>
 #include <string.h>
 #include <stdbool.h>
@@ -41,12 +23,30 @@
 #include "esp_event_loop.h"
 #include "esp_log.h"
 
-#define WIFI_SSID "wifi"
-#define WIFI_PASS "secret1703secret1703"
+#include <time.h>
+#include <sys/time.h>
+#include "esp_attr.h"
+#include "esp_sleep.h"
+
+#include "lwip/err.h"
+#include "apps/sntp/sntp.h"
+
+
+#define WIFI_SSID "Nieto"
+#define WIFI_PASS "fun02480"
 
 #define PIN_BLUE GPIO_NUM_23
 #define PIN_RED GPIO_NUM_22
 #define GPIO_OUTPUT_PINS  ((1ULL<<PIN_RED) | (1ULL<<PIN_BLUE))
+
+/* Variable holding number of times ESP32 restarted since first boot.
+ * It is placed into RTC memory using RTC_DATA_ATTR and
+ * maintains its value when ESP32 wakes from deep sleep.
+ */
+RTC_DATA_ATTR static int boot_count = 0;
+
+static void obtain_time(void);
+static void initialize_sntp(void);
 
 static const char* DEMO_TAG = "CHALECO";
 extern esp_ble_ibeacon_vendor_t vendor_config;
@@ -214,6 +214,9 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event)
         break;
     
 	case SYSTEM_EVENT_STA_DISCONNECTED:
+	     /* This is a workaround as ESP32 WiFi libs don't currently
+             auto-reassociate. */
+             esp_wifi_connect();
 	     xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
 	     printf("Desconectado !\n");
         break;
@@ -225,8 +228,48 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event)
 	return ESP_OK;
 }
 
+void task_sntp(void *pvParameter){
+    // wait for time to be set
+    time_t now = 0;
+    struct tm timeinfo = { 0 };
+    int retry = 0;
+    char strftime_buf[64];
+    const int retry_count = 10;
+    while(1){
+        printf("obtain time: waiting for the wifi network...\n");
+        xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
+ 	initialize_sntp();
+	if (timeinfo.tm_year < (2017 - 1900)) {
+           ESP_LOGI(TAG, "Time is not set yet. Connecting to WiFi and getting time over NTP.");
+           while(timeinfo.tm_year < (2017 - 1900) && ++retry < retry_count) {
+                ESP_LOGI(TAG, "Waiting for system time to be set... (%d/%d)", retry, retry_count);
+                vTaskDelay(2000 / portTICK_PERIOD_MS);
+                time(&now);
+                localtime_r(&now, &timeinfo);
+            }
+        }
+        setenv("TZ", "ARG-3", 1);
+        tzset();
+        localtime_r(&now, &timeinfo);
+        strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
+        ESP_LOGI(TAG, "The current date/time in Argentina is: %s", strftime_buf);
+        vTaskDelay(60000 / portTICK_PERIOD_MS);
+    }
+}
+
+static void initialize_sntp(void)
+{
+    ESP_LOGI(TAG, "Initializing SNTP");
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    sntp_setservername(0, "pool.ntp.org");
+    sntp_init();
+}
+
+
 void main_task(void *pvParameter)
 {
+        time_t now;
+        struct tm timeinfo;
 	while(1) {
 	   // wait for connection
 	   printf("Main task: waiting for connection to the wifi network...\n");
@@ -240,7 +283,9 @@ void main_task(void *pvParameter)
 	   printf("Subnet mask: %s\n", ip4addr_ntoa(&ip_info.netmask));
 	   printf("Gateway:     %s\n", ip4addr_ntoa(&ip_info.gw));
 	   printf("Sube Datos !\n");
-	   vTaskDelay(200000 / portTICK_RATE_MS);
+	   vTaskDelay(5000 / portTICK_RATE_MS);
+	
+           vTaskDelay(200000 / portTICK_RATE_MS);
            ESP_ERROR_CHECK(esp_wifi_stop());
 	   printf("Desconecto!\n");
 	   vTaskDelay(200000 / portTICK_RATE_MS);
@@ -277,6 +322,8 @@ void alarm_led(void *pvParameter)
 void app_main()
 {
     ESP_ERROR_CHECK(nvs_flash_init());
+    ++boot_count;
+    ESP_LOGI(TAG, "Boot count: %d", boot_count);
     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
     esp_bt_controller_init(&bt_cfg);
     esp_bt_controller_enable(ESP_BT_MODE_BTDM);
@@ -288,6 +335,7 @@ void app_main()
     io_conf.pull_down_en = 0; //disable pull-down mode
     io_conf.pull_up_en = 0; //disable pull-up mode
     gpio_config(&io_conf);  //configure GPIO with the given settings
+    
 
     ble_ibeacon_init();
 
@@ -301,6 +349,8 @@ void app_main()
     // initialize the tcp stack
     tcpip_adapter_init();
 
+    initialize_sntp();
+    
     // initialize the wifi event handler
     ESP_ERROR_CHECK(esp_event_loop_init(wifi_event_handler, NULL));
 	
@@ -326,5 +376,6 @@ void app_main()
     xTaskCreate(&main_task, "main_task", 2048, NULL, 5, NULL);
     xTaskCreate(&pkt_led, "pkt_led", 2048, NULL, 5, NULL);
     xTaskCreate(&alarm_led, "alarm_led", 2048, NULL, 5, NULL);
+    xTaskCreate(&task_sntp, "task_sntp", 2048, NULL, 5, NULL);
 }
 
