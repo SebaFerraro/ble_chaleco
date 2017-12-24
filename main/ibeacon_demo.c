@@ -29,11 +29,15 @@
 #include "esp_sleep.h"
 
 #include "lwip/err.h"
-#include "apps/sntp/sntp.h"
+
+#include <apps/sntp/sntp.h>
+#include <lwip/sockets.h>
+#include <sys/time.h>
+#include "sdkconfig.h"
 
 
-#define WIFI_SSID "Nieto"
-#define WIFI_PASS "fun02480"
+#define WIFI_SSID "Guardian"
+#define WIFI_PASS "Gu4rd14n"
 
 #define PIN_BLUE GPIO_NUM_23
 #define PIN_RED GPIO_NUM_22
@@ -44,9 +48,6 @@
  * maintains its value when ESP32 wakes from deep sleep.
  */
 RTC_DATA_ATTR static int boot_count = 0;
-
-static void obtain_time(void);
-static void initialize_sntp(void);
 
 static const char* DEMO_TAG = "CHALECO";
 extern esp_ble_ibeacon_vendor_t vendor_config;
@@ -218,6 +219,7 @@ static esp_err_t wifi_event_handler(void *ctx, system_event_t *event)
              auto-reassociate. */
              esp_wifi_connect();
 	     xEventGroupClearBits(wifi_event_group, CONNECTED_BIT);
+             sntp_stop();
 	     printf("Desconectado !\n");
         break;
     
@@ -235,34 +237,34 @@ void task_sntp(void *pvParameter){
     int retry = 0;
     char strftime_buf[64];
     const int retry_count = 10;
+    ESP_LOGI(TAG, "Initializing SNTP");
+    ip_addr_t addr;
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    inet_pton(AF_INET, "170.210.222.2", &addr);
+    sntp_setserver(0, &addr);
     while(1){
         printf("obtain time: waiting for the wifi network...\n");
         xEventGroupWaitBits(wifi_event_group, CONNECTED_BIT, false, true, portMAX_DELAY);
- 	initialize_sntp();
+	if( ! sntp_enabled()){
+          sntp_init();
+          ESP_LOGI(TAG, "SNTP No habilitado HABILITANDO ....");
+	}
 	if (timeinfo.tm_year < (2017 - 1900)) {
            ESP_LOGI(TAG, "Time is not set yet. Connecting to WiFi and getting time over NTP.");
            while(timeinfo.tm_year < (2017 - 1900) && ++retry < retry_count) {
-                ESP_LOGI(TAG, "Waiting for system time to be set... (%d/%d)", retry, retry_count);
-                vTaskDelay(2000 / portTICK_PERIOD_MS);
+                ESP_LOGI(TAG, "Waiting for system time to be set... año: %d (%d/%d)",timeinfo.tm_year ,retry, retry_count);
+                vTaskDelay(10000 / portTICK_PERIOD_MS);
                 time(&now);
                 localtime_r(&now, &timeinfo);
             }
         }
-        setenv("TZ", "ARG-3", 1);
+        setenv("TZ", "WART4WARST,J1/0,J365/25", 1);
         tzset();
         localtime_r(&now, &timeinfo);
         strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
         ESP_LOGI(TAG, "The current date/time in Argentina is: %s", strftime_buf);
         vTaskDelay(60000 / portTICK_PERIOD_MS);
     }
-}
-
-static void initialize_sntp(void)
-{
-    ESP_LOGI(TAG, "Initializing SNTP");
-    sntp_setoperatingmode(SNTP_OPMODE_POLL);
-    sntp_setservername(0, "pool.ntp.org");
-    sntp_init();
 }
 
 
@@ -285,10 +287,10 @@ void main_task(void *pvParameter)
 	   printf("Sube Datos !\n");
 	   vTaskDelay(5000 / portTICK_RATE_MS);
 	
-           vTaskDelay(200000 / portTICK_RATE_MS);
+           vTaskDelay(20000 / portTICK_RATE_MS);
            ESP_ERROR_CHECK(esp_wifi_stop());
 	   printf("Desconecto!\n");
-	   vTaskDelay(200000 / portTICK_RATE_MS);
+	   vTaskDelay(1800000 / portTICK_RATE_MS);
            ESP_ERROR_CHECK(esp_wifi_start());
 	}
 }
@@ -349,8 +351,6 @@ void app_main()
     // initialize the tcp stack
     tcpip_adapter_init();
 
-    initialize_sntp();
-    
     // initialize the wifi event handler
     ESP_ERROR_CHECK(esp_event_loop_init(wifi_event_handler, NULL));
 	

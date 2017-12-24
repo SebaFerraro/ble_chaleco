@@ -153,7 +153,9 @@ ibeacon_demo.o: \
  /home/sferraro/esp32/esp-idf/components/esp32/include/esp_event_loop.h \
  /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/lwip/err.h \
  /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/apps/sntp/sntp.h \
- /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/apps/sntp/sntp_opts.h
+ /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/apps/sntp/sntp_opts.h \
+ /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
+ /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/lwip/inet.h
 
 /home/sferraro/esp32/esp-idf/components/newlib/include/stdint.h:
 
@@ -462,4 +464,8 @@ ibeacon_demo.o: \
 /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/apps/sntp/sntp.h:
 
 /home/sferraro/esp32/esp-idf/components/lwip/include/lwip/apps/sntp/sntp_opts.h:
+
+/home/sferraro/esp32/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
+
+/home/sferraro/esp32/esp-idf/components/lwip/include/lwip/lwip/inet.h:
 /home/sferraro/esp32/Quilmes/ble_chaleco/main/./ibeacon_demo.c:
